@@ -1,14 +1,18 @@
-This is a sample Python script.
+def compute_bmi(weight, height, sportuoja=False):
+    bmi = weight / height ** 2
+    if bmi < 18.5:
+        result = "underweight"
+    elif bmi > 25 and not sportuoja:
+        result = "overweight"
+    else:
+        result = "normal"
+    return result
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    user_weight = float(input('Your weight [kg]: '))
+    user_height = float(input('Your height [m]: '))
+    user_result = compute_bmi(user_weight, user_height)
+    print(f"You are {user_result}")
+
+

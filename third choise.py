@@ -1,6 +1,6 @@
 def mano_duomenys(vardas, pavarde, amzius):
     if amzius >= 100:
-    result = "garbus"
+        result = "garbus"
     else:
         result = "jaunas"
 
