@@ -6,9 +6,9 @@ For 11 the function will return True, for 12 -> False."""
 
 
 if __name__ == '__main__':
-    ele = 15
+    ele = 11
     if ele > 0:
-        for i in range(2, (ele//2)):
+        for i in range(1, (ele//2)):
             if (ele % i) == 0:
                 print(False, ele, "is not prime number")
                 break
