@@ -11,11 +11,11 @@ class TestDigits(unittest.TestCase):
         self.assertEqual(count_digits(55), 2)
 
     def test_many_digits(self):
-        self.assertEqual(count_digits(111111111, 2))
+        self.assertEqual(count_digits(111111111))
 
     def test_false_input(self):
           with self.assertRaises(ValueError):
-              count_digits("aaabb")
+            count_digits("aaabb")
 
 
 class TestZeroes(unittest.TestCase):

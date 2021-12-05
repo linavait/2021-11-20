@@ -7,7 +7,7 @@ Hint: use the open() function, split() method, dictionary and loop.
 
 if __name__ == "__main__":
     from collections import Counter
-    with open('tekstas7_uzd.py', encoding='utf8') as f:
+    with open('../tekstas7_uzd.py', encoding='utf8') as f:
         lines = f.read()
         words = lines.split()
 
