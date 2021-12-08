@@ -5,14 +5,14 @@ E.g.
 For 11 the function will return True, for 12 -> False."""
 
 
-if __name__ == '__main__':
-    ele = 11
-    if ele > 0:
-        for i in range(1, (ele//2)):
-            if (ele % i) == 0:
-                print(False, ele, "is not prime number")
+if __name__ == "__main__":
+    n = int(input("Enter a number:"))
+    if n > 1:
+        for i in range(2, n // 2):
+            if (n % i) == 0:
+                print(n, "is not a prime number")
                 break
-            else:
-                print(True, ele, "is prime number")
-                break
-
+        else:
+            print(n, "is a prime number")
+    else:
+        print(n, "is not prime number")
